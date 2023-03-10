@@ -18,59 +18,24 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
       body: ListView(
         children: <Widget>[
-          CircleAvatar(
-            radius: 72,
-            backgroundColor: Colors.grey.shade800,
-            backgroundImage: const NetworkImage(
-              'https://cdn.pixabay.com/photo/2016/06/06/17/05/woman-1439909_960_720.jpg',
-            ),
-          ),
-          Padding(
+           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Center(
               child: Column(
                 children: [
-                  const Divider(
-                    thickness: 1,
-                  ),
-                  const Text(
-                    'Username ',
-                    style:
-                    TextStyle(fontSize: 19.0, fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 5),
-                  Text('Lisandro',
-                      style:
-                      TextStyle(fontSize: 12.0, color: Colors.grey[600])),
-                  const Divider(
-                    thickness: 1,
-                  ),
-                  const Text(
-                    'Phone number ',
-                    style:
-                    TextStyle(fontSize: 19.0, fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 5),
-                  Text('+1 435093490',
-                      style:
-                      TextStyle(fontSize: 12.0, color: Colors.grey[600])),
-                  const Divider(
-                    thickness: 1,
-                  ),
-                  const Text(
-                    'Interests ',
-                    style:
-                    TextStyle(fontSize: 19.0, fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 5),
-                  Text('Football, Wrestling, Hockey and Rugby',
-                      style:
-                      TextStyle(fontSize: 12.0, color: Colors.grey[600])),
-                  const Divider(
-                    thickness: 1,
-                  ),
+
                   const SizedBox(
-                    height: 50,
+                    height: 300,
+                  ),
+
+                  const Text(
+                    'User Signed in ',
+                    style:
+                    TextStyle(fontSize: 19.0, fontWeight: FontWeight.bold),
+                  ),
+
+                  const SizedBox(
+                    height: 70,
                   ),
                   ElevatedButton(
                       onPressed: () async {
